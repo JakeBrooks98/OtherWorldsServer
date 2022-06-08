@@ -1,0 +1,74 @@
+[
+    {
+    "model": "otherworldsapi.worldevent",
+    "pk": 1,
+    "fields": {
+        "world": 1,
+        "event": 1
+        
+    }
+},
+{
+    "model": "otherworldsapi.worldevent",
+    "pk": 2,
+    "fields": {
+        "world": 1,
+        "event": 2
+        
+    }
+},
+{
+    "model": "otherworldsapi.worldevent",
+    "pk": 3,
+    "fields": {
+        "world": 1,
+        "event": 3
+        
+    }
+},
+{
+    "model": "otherworldsapi.worldevent",
+    "pk": 4,
+    "fields": {
+        "world": 1,
+        "event": 4
+        
+    }
+},
+{
+    "model": "otherworldsapi.worldevent",
+    "pk": 5,
+    "fields": {
+        "world": 1,
+        "event": 5
+        
+    }
+},
+{
+    "model": "otherworldsapi.worldevent",
+    "pk": 6,
+    "fields": {
+        "world": 1,
+        "event": 6
+        
+    }
+},
+{
+    "model": "otherworldsapi.worldevent",
+    "pk": 7,
+    "fields": {
+        "world": 1,
+        "event": 7
+        
+    }
+},
+{
+    "model": "otherworldsapi.worldevent",
+    "pk": 8,
+    "fields": {
+        "world": 1,
+        "event": 8
+        
+    }
+}
+]
