@@ -1,0 +1,90 @@
+[
+    {
+    "model": "otherworldsapi.events",
+    "pk": 1,
+    "fields": {
+        "name": "The Beginning",
+        "description": "Life begins in the test world",
+        "date": 1,
+        "date_suffix": "CE"
+        
+    }
+},
+{
+    "model": "otherworldsapi.events",
+    "pk": 2,
+    "fields": {
+        "name": "The First",
+        "description": "The first coder is born",
+        "date": 19,
+        "date_suffix": "CE"
+        
+    }
+},
+{
+    "model": "otherworldsapi.events",
+    "pk": 3,
+    "fields": {
+        "name": "The First Great Code War",
+        "description": "This is the first time coders used their skills for evil",
+        "date": 150,
+        "date_suffix": "CE"
+        
+    }
+},
+{
+    "model": "otherworldsapi.events",
+    "pk": 4,
+    "fields": {
+        "name": "The Second Code War",
+        "description": "The losers of the first code war seek revenge for their loss",
+        "date": 216,
+        "date_suffix": "CE"
+        
+    }
+},
+{
+    "model": "otherworldsapi.events",
+    "pk": 5,
+    "fields": {
+        "name": "The Creation of Codetopia",
+        "description": "A perfect Utopia is built where all coders can live in relative peace",
+        "date": 275,
+        "date_suffix": "CE"
+        
+    }
+},
+{
+    "model": "otherworldsapi.events",
+    "pk": 6,
+    "fields": {
+        "name": "The Last Great Code War",
+        "description": "The perfection of Codetopia only brought about greed, igniting a third and final code war",
+        "date": 346,
+        "date_suffix": "CE"
+        
+    }
+},
+{
+    "model": "otherworldsapi.events",
+    "pk": 7,
+    "fields": {
+        "name": "The Burning of Codetopia",
+        "description": "The climax of the final code war brought about the destruction of the perfect city",
+        "date": 407,
+        "date_suffix": "CE"
+        
+    }
+},
+{
+    "model": "otherworldsapi.events",
+    "pk": 8,
+    "fields": {
+        "name": "The End",
+        "description": "This is the end of all things in the test world",
+        "date": 42000000,
+        "date_suffix": "CE"
+        
+    }
+}
+]

@@ -1,0 +1,58 @@
+[
+    {
+    "model": "otherworldsapi.biome",
+    "pk": 1,
+    "fields": {
+        "label": "Frozen Tundra"
+    }
+},
+{
+    "model": "otherworldsapi.biome",
+    "pk": 2,
+    "fields": {
+        "label": "Desert"
+    }
+},
+{
+    "model": "otherworldsapi.biome",
+    "pk": 3,
+    "fields": {
+        "label": "Tropical/ Coastal"
+    }
+},
+{
+    "model": "otherworldsapi.biome",
+    "pk": 4,
+    "fields": {
+        "label": "Forest"
+    }
+},
+{
+    "model": "otherworldsapi.biome",
+    "pk": 5,
+    "fields": {
+        "label": "Mountainous"
+    }
+},
+{
+    "model": "otherworldsapi.biome",
+    "pk": 6,
+    "fields": {
+        "label": "Plains"
+    }
+},
+{
+    "model": "otherworldsapi.biome",
+    "pk": 7,
+    "fields": {
+        "label": "Island"
+    }
+},
+{
+    "model": "otherworldsapi.biome",
+    "pk": 8,
+    "fields": {
+        "label": "Swamp"
+    }
+}
+]
