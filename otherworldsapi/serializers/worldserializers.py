@@ -7,9 +7,9 @@ class WorldSerializer(serializers.ModelSerializer):
     class Meta:
         model = World
         fields = ('id','description', 'user', 'name', 'events','regions')
-        depth = 2
+        depth = 3
         
 class CreateWorldSerializer(serializers.ModelSerializer):
     class Meta:
         model = World
-        fields = ['id', 'description', 'name', 'user']
+        fields = ['id', 'description', 'name']

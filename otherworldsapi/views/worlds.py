@@ -20,10 +20,7 @@ class WorldView(ViewSet):
             Response -- JSON serialized World 
         """
         world = World.objects.get(pk=pk)
-        events = Events.objects.get(world = world)
-        regions = Region.objects.get(world = world)
         serializer = WorldSerializer(world)
-        serializer.save(events=events, regions=regions)
         return Response(serializer.data)
         
 
@@ -43,7 +40,7 @@ class WorldView(ViewSet):
         Returns
             Response -- JSON serialized world instance
         """
-        user = User.objects.get(user=request.auth.user)
+        user = request.auth.user
         serializer = CreateWorldSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save(user=user)
