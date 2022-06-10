@@ -7,4 +7,10 @@ class World(models.Model):
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='worlds')
     description = models.CharField(max_length=350)
+    @property
+    def is_user(self):
+        return self.__is_user
     
+    @is_user.setter
+    def is_user(self,value):
+        self.__is_user=value

@@ -5,7 +5,7 @@
     "fields": {
         "name": "Test Region",
         "description": "This region exists to test code",
-        "biome": 3,
+        "biome": [3,4,7],
         "world": 1
     }
 },
@@ -15,7 +15,7 @@
     "fields": {
         "name": "Code Land",
         "description": "This region is where all coders go to go code",
-        "biome": 1,
+        "biome": [1,5],
         "world": 1
     }
 },
@@ -25,7 +25,7 @@
     "fields": {
         "name": "Bug central",
         "description": "Here there be bugs",
-        "biome": 2,
+        "biome": [2],
         "world": 1
     }
 }
