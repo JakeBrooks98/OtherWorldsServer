@@ -20,6 +20,8 @@ class WorldView(ViewSet):
             Response -- JSON serialized World 
         """
         world = World.objects.get(pk=pk)
+        if request.auth.user == world.user:
+            world.is_user = True
         serializer = WorldSerializer(world)
         return Response(serializer.data)
         

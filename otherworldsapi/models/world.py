@@ -13,4 +13,4 @@ class World(models.Model):
     
     @is_user.setter
     def is_user(self,value):
-        self.is_user=value
+        self.__is_user=value

@@ -6,10 +6,10 @@ class EventsSerializer(serializers.ModelSerializer):
     """
     class Meta:
         model = Events
-        fields = ('id','description', 'name')
+        fields = ('id','description', 'name', 'world', 'date', 'date_suffix')
         depth = 2
         
 class CreateEventsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Events
-        fields = ['id', 'description', 'name']
+        fields = ['id', 'description', 'name', 'date', 'date_suffix']

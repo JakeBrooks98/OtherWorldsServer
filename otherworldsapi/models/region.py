@@ -7,4 +7,4 @@ class Region(models.Model):
     description = models.CharField(max_length=350)
     world = models.ForeignKey(
         "World", on_delete=models.CASCADE, related_name='regions')
-    biome = models.ForeignKey( "Biome", on_delete=models.CASCADE, related_name='region')
+    biome = models.ManyToManyField( "Biome", related_name='region')
