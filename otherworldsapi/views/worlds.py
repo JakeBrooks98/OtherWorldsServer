@@ -1,3 +1,4 @@
+from multiprocessing import Event
 from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
@@ -20,6 +21,9 @@ class WorldView(ViewSet):
             Response -- JSON serialized World 
         """
         world = World.objects.get(pk=pk)
+        events = Events.objects.filter(world = world)
+        events.order_by('date')
+        world.events=events
         if request.auth.user == world.user:
             world.is_user = True
         serializer = WorldSerializer(world)
@@ -64,3 +68,17 @@ class WorldView(ViewSet):
         world = World.objects.get(pk=pk)
         world.delete()
         return Response(None, status=status.HTTP_204_NO_CONTENT)
+    
+    @action(methods=['get'], detail=False)
+    def myworlds(self, request):
+        user=request.auth.user
+        worlds= World.objects.filter(user=user)
+        serializer = WorldSerializer(worlds, many=True)
+        return Response(serializer.data)
+    
+    @action(methods=['get'], detail=False)
+    def whatsnew(self, request):
+        world=World.objects.last()
+        serializer= WorldSerializer(world)
+        return Response(serializer.data)
+    
