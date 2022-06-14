@@ -9,3 +9,6 @@ class Events(models.Model):
     world = models.ManyToManyField("World", related_name='events')
     date = models.IntegerField()
     date_suffix = models.CharField(max_length=6)
+    
+    class Meta: 
+        ordering=['date']

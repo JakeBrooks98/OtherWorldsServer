@@ -21,9 +21,7 @@ class WorldView(ViewSet):
             Response -- JSON serialized World 
         """
         world = World.objects.get(pk=pk)
-        events = Events.objects.filter(world = world)
-        events.order_by('date')
-        world.events=events
+        
         if request.auth.user == world.user:
             world.is_user = True
         serializer = WorldSerializer(world)
