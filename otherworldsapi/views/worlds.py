@@ -6,6 +6,7 @@ from rest_framework import serializers, status
 from otherworldsapi.models import World
 from django.core.exceptions import ValidationError
 from django.contrib.auth.models import User
+from otherworldsapi.models import events
 from otherworldsapi.models.events import Events
 from otherworldsapi.models.region import Region
 from otherworldsapi.serializers.worldserializers import WorldSerializer, CreateWorldSerializer
@@ -21,7 +22,8 @@ class WorldView(ViewSet):
             Response -- JSON serialized World 
         """
         world = World.objects.get(pk=pk)
-        
+        # events = Events.objects.filter(world=world)
+        # world.events = events
         if request.auth.user == world.user:
             world.is_user = True
         serializer = WorldSerializer(world)

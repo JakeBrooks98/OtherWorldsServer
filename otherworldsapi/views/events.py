@@ -4,6 +4,7 @@ from rest_framework.response import Response
 from rest_framework import serializers, status
 from django.core.exceptions import ValidationError
 from otherworldsapi.models.events import Events
+from otherworldsapi.models import World
 from otherworldsapi.serializers.eventserializer import CreateEventsSerializer
 
 class EventView(ViewSet):
@@ -15,7 +16,7 @@ class EventView(ViewSet):
         Returns
             Response -- JSON serialized event instance
         """
-        world = request.data['world']
+        world = World.objects.get(pk=request.data['world'])
         serializer = CreateEventsSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save(world = world)
