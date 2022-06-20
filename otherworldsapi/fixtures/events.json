@@ -7,7 +7,7 @@
         "description": "Life begins in the test world",
         "date": 1,
         "date_suffix": "CE",
-        "world":[1]
+        "world":1
     }
 },
 {
@@ -18,7 +18,7 @@
         "description": "The first coder is born",
         "date": 19,
         "date_suffix": "CE",
-        "world":[1]
+        "world":1
         
     }
 },
@@ -30,7 +30,7 @@
         "description": "This is the first time coders used their skills for evil",
         "date": 150,
         "date_suffix": "CE",
-        "world":[1]
+        "world":1
         
     }
 },
@@ -42,7 +42,7 @@
         "description": "The losers of the first code war seek revenge for their loss",
         "date": 216,
         "date_suffix": "CE",
-        "world":[1]
+        "world":1
         
     }
 },
@@ -54,7 +54,7 @@
         "description": "A perfect Utopia is built where all coders can live in relative peace",
         "date": 275,
         "date_suffix": "CE",
-        "world":[1]
+        "world":1
         
     }
 },
@@ -66,7 +66,7 @@
         "description": "The perfection of Codetopia only brought about greed, igniting a third and final code war",
         "date": 346,
         "date_suffix": "CE",
-        "world":[1]
+        "world":1
         
     }
 },
@@ -78,7 +78,7 @@
         "description": "The climax of the final code war brought about the destruction of the perfect city",
         "date": 407,
         "date_suffix": "CE",
-        "world":[1]
+        "world":1
         
     }
 },
@@ -90,7 +90,7 @@
         "description": "This is the end of all things in the test world",
         "date": 42000000,
         "date_suffix": "CE",
-        "world":[1]
+        "world":1
         
     }
 }
