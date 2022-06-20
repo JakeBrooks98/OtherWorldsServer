@@ -11,5 +11,6 @@ class Events(models.Model):
     date = models.IntegerField()
     date_suffix = models.CharField(max_length=6)
     
+    
     class Meta: 
         ordering=['date']

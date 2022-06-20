@@ -22,12 +22,14 @@ from otherworldsapi.views.events import EventView
 from otherworldsapi.views.worlds import WorldView
 from otherworldsapi.views.biomes import BiomeView
 from otherworldsapi.views.regions import RegionView
+from otherworldsapi.views.maps import MapView
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'worlds', WorldView, 'world')
 router.register(r'events', EventView, 'event')
 router.register(r'regions', RegionView, 'region')
 router.register(r'biomes', BiomeView, 'biome')
+router.register(r'maps', MapView, 'map')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
