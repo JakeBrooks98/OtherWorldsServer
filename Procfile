@@ -1,0 +1,1 @@
+web: gunicorn otherworlds.wsgi --log-file -
