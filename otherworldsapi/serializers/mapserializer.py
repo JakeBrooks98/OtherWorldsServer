@@ -6,7 +6,7 @@ class MapSerializer(serializers.ModelSerializer):
     """
     class Meta:
         model = Map
-        fields = ('id','map_image', 'world')
+        fields = ('id','map_image')
         depth = 2
         
 class CreateMapSerializer(serializers.ModelSerializer):
