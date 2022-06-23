@@ -10,7 +10,6 @@ class WorldSerializer(serializers.ModelSerializer):
     """
     events=EventsSerializer(many=True)
     regions=RegionSerializer(many=True)
-    image=MapSerializer()
     class Meta:
         model = World
         fields = ('id','description', 'name', 'events','regions', 'image', 'is_user')
