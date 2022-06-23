@@ -1,0 +1,10 @@
+[
+    {
+        "model": "otherworldsapi.maps",
+        "pk": 1,
+        "fields": {
+            "map_image": "hfjfkkgkllshhfkslpojhgdfghj",
+            "world":1
+        }
+    }
+]
