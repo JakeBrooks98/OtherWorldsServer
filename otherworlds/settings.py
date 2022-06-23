@@ -67,6 +67,7 @@ REST_FRAMEWORK = {
 
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',
+    'https://other-worlds-client.herokuapp.com/',
     'http://127.0.0.1:3000'
 )
 
