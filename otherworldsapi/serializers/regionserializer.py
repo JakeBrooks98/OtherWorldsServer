@@ -6,7 +6,7 @@ class RegionSerializer(serializers.ModelSerializer):
     """
     class Meta:
         model = Region
-        fields = ('id','description', 'name', 'world', 'biome')
+        fields = ('id','description', 'name', 'biome')
         depth = 2
         
 class CreateRegionSerializer(serializers.ModelSerializer):
