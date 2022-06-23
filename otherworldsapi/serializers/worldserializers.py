@@ -9,7 +9,7 @@ class WorldSerializer(serializers.ModelSerializer):
     events=EventsSerializer(many=True)
     class Meta:
         model = World
-        fields = ('id', 'name', 'events','regions', 'image', 'is_user')
+        fields = ('id','description', 'name', 'events','regions', 'image', 'is_user')
         depth = 3
         
 class CreateWorldSerializer(serializers.ModelSerializer):
